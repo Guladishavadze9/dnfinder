@@ -1,0 +1,247 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+}
+
+body {
+    font-family: Arial, sans-serif; /* Set a default font */
+    margin: 0; /* Remove default margin */
+}
+
+header {
+    background-color: rgb(78, 40, 238); /* Dark background */
+    color: white; /* White text */
+    padding: 15px 20px; /* Padding around the header */
+}
+
+.container {
+    display: flex; /* Flexbox for layout */
+    justify-content: space-between; /* Space between logo, nav, and search bar */
+    align-items: center; /* Center items vertically */
+}
+
+.logo{
+    margin-left: -300px;
+}
+h1{
+    margin-left: -200px;
+}
+
+nav ul {
+    list-style-type: none; /* Remove bullet points */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    display: flex; /* Flexbox for horizontal layout */
+}
+
+nav ul li {
+    margin-left: 20px; /* Space between menu items */
+}
+
+nav ul li a {
+    color: white; /* White text for links */
+    text-decoration: none; /* Remove underline from links */
+}
+
+nav ul li a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+.search-bar {
+    display: flex; /* Flexbox for search bar layout */
+}
+
+.search-bar input {
+    padding: 5px; /* Padding for input */
+    border: none; /* Remove border */
+    border-radius: 4px 0 0 4px; /* Rounded corners */
+}
+
+.search-bar button {
+    padding: 5px 10px; /* Padding for button */
+    border: none; /* Remove border */
+    background-color: #4CAF50; /* Green background for button */
+    color: white; /* White text for button */
+    border-radius: 0 4px 4px 0; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+.search-bar button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+.search-section {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    margin: 20px 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.search-bar {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input[type="text"], select {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input[type="text"] {
+    flex: 1;
+}
+
+button {
+    background-color: #ff4757;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #ff2e43;
+}
+
+.filters {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.restaurant-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.restaurant-card {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.restaurant-card:hover {
+    transform: translateY(-5px);
+}
+
+.restaurant-image {
+    width: 100%;
+    height: 200px;
+    background-color: #ddd;
+}
+
+.restaurant-info {
+    padding: 15px;
+}
+
+.restaurant-name {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.restaurant-cuisine {
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.restaurant-rating {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.rating-star {
+    color: #ffd700;
+}
+
+@media (max-width: 768px) {
+    .search-bar {
+        flex-direction: column;
+    }
+    
+    .filters {
+        flex-direction: column;
+    }
+
+    select {
+        width: 100%;
+    }
+}
+
+footer {
+    background-color: rgb(78, 40, 238); /* Dark background */
+    color: white; /* White text */
+    padding: 20px 0; /* Padding for the footer */
+    font-size: 14px; /* Font size for footer text */
+}
+
+.container {
+    display: flex; /* Flexbox for layout */
+    justify-content: space-around; /* Space between sections */
+    max-width: 1200px; /* Max width for the container */
+    margin: 0 auto; /* Center the container */
+}
+
+.footer-links, .social-media, .contact-info {
+    flex: 1; /* Equal space for each section */
+    margin: 0 20px; /* Margin between sections */
+}
+
+.footer-links h3, .social-media h3, .contact-info h3 {
+    margin-bottom: 10px; /* Space below headings */
+}
+
+.footer-links ul, .social-media ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+}
+
+.footer-links ul li, .social-media ul li {
+    margin: 5px 0; /* Space between list items */
+}
+
+.footer-links a, .social-media a {
+    color: white; /* White text for links */
+    text-decoration: none; /* Remove underline from links */
+}
+
+.footer-links a:hover, .social-media a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+.footer-bottom {
+    text-align: center; /* Center text */
+    margin-top: 20px; /* Space above footer bottom */
+    border-top: 1px solid #444; /* Top border */
+    padding-top: 10px; /* Padding above text */
+}
+.footer-bottom {
+    text-align: center; /* Center text */
+    margin-top: 20px; /* Space above footer bottom */
+    border-top: 1px solid #444; /* Top border */
+    padding-top: 10px; /* Padding above text */
+}
+.social-media{
+    margin-left: 500px;
+}
+.contact-info{
+    margin-left: 700px;
+    margin-top: -130px;
+}
